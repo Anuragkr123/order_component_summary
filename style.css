@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+html{
+    font-family: 'Red Hat Display', sans-serif;
+}
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--pale-blue);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+.container{
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 340px;
+    height: 500px;
+}
+.card-img img{
+    background-size: contain;
+    height: 160px;
+    width: 400px;
+}
+.card-items{
+    padding: 2rem;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-info h2{
+    font-size: 1.4rem;
+    color: var(--dark-blue);
+    /* margin-top: 10px; */
+}
+.card-info p{
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--desaturated-blue);
+    padding: 1.1rem;
+    line-height: 1.2rem;
+    font-weight: 500; 
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--very-pale-blue);
+    border-radius: 8px;
+    padding: 10px;
+    /* gap: 2rem; */
+    line-height: 1.3rem;
+}
+.price img{
+    width: 40px;
+    margin-right: 10px;
+}
+.left-sec P{
+    margin-right: 4rem;
+    font-weight: 800;
+    font-size: 0.85rem;
+}
+.left-sec span{
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--desaturated-blue);
+}
+a{
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: .85rem;
+}
+.btn1{
+    margin-top: 1.2rem;
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: white;
+    padding: .7rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 600;
+}
+.btn1:hover{
+    transform: scale(1.03);
+}
+.cancel{
+    color: grey;
+    text-align: center;
+    margin-top: .5rem;
+    font-weight: 600;
+    font-size: .8rem;
+}
